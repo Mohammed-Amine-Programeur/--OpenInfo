@@ -1,0 +1,122 @@
+/* ===== الإعدادات الأساسية ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* smooth scroll عند النقر على الروابط */
+}
+
+body {
+  font-family: "Tahoma", Arial, sans-serif;
+  line-height: 1.7;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+}
+
+/* ===== الشريط الجانبي ===== */
+.sidebar {
+    width: 220px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    margin-right:  0;
+    margin-left: 100%;
+    right: 0;        
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    position: sticky;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  color: #444;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.sidebar a:hover {
+  color: #0056b3;
+  font-weight: bold;
+}
+
+/* ===== المحتوى الرئيسي ===== */
+.content {
+  margin-right: 240px; /* مسافة لوجود الشريط الجانبي */
+  padding: 30px 40px;
+  max-width: 900px;
+}
+
+/* ===== رؤوس الصفحة ===== */
+header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+header .subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ===== الأقسام ===== */
+article {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+article h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #444;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+article p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* ===== القوائم داخل الأقسام ===== */
+article ul {
+  list-style: disc inside;
+  margin-bottom: 15px;
+}
+
+article ul li {
+  margin-bottom: 10px;
+}
+
+/* ===== footer ===== */
+footer {
+    background-color:rgb(79, 202, 236) ;
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
